@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> latihan 2 </title>
+</head>
+<script language="javascript">
+	function tambah() {
+		a=eval(form.a.value)
+		b=eval(form.b.value)
+		c=a+b
+		form.hasil.value=c
+		}
+	function kurang() {
+		a=eval(form.a.value)
+		b=eval(form.b.value)
+		c=a-b
+		form.hasil.value=c
+		}
+	function kali() {
+		a=eval(form.a.value)
+		b=eval(form.b.value)
+		c=a*b
+		form.hasil.value=c
+		}
+	function bagi() {
+		a=eval(form.a.value)
+		b=eval(form.b.value)
+		c=a/b
+		form.hasil.value=c
+		}
+</script>
+<body>
+	<form name="form">
+		Bilangan 1 <input type="text" name="a" size="20">
+		<br><br>
+		Bilangan 2 <input type="text" name="b" size="20">
+		<br><br>
+		Hasil      <input type="text" name="hasil" disabled="true" size="20">
+		<br><br>
+		<input type="button" value="Tambah(+)" onclick="tambah()">
+		<input type="button" value="Kurang(-)" onclick="kurang()">
+		<input type="button" value="Kali(x)" onclick="kali()">
+		<input type="button" value="Bagi(:)" onclick="bagi()">
+		<input type="reset" value="Reset" onclick="reset()">
+	</form>
+</body>
+</html>

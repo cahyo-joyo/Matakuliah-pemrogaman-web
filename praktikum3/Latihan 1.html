@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Latihan 1 </title>
+</head>
+<script language="javascript">
+	function test() {
+		var nilai=document.kirim. T1. value
+		if (nilai<0)
+			document.kirim.T2. value="Tidak Ada Nilai"
+		else if (nilai<=40)
+			document.kirim.T2. value="E"
+		else if (nilai<=55)
+			document.kirim.T2. value="D"
+		else if (nilai<=60)
+			document.kirim.T2. value="C"
+		else if (nilai<=65)
+			document.kirim.T2. value="BC"
+		else if (nilai<=70)
+			document.kirim.T2. value="B"
+		else if (nilai<=80)
+			document.kirim.T2. value="AB"
+		else if (nilai<=100)
+			document.kirim.T2. value="A"
+		else
+			document.kirim.T2. value="Tida Ada Nilai"
+	}
+</script>
+<body>
+<form method="post" name="kirim">
+	<p>Nilai
+		<input type="text" name="T1" size="20">Hasil Nilai
+		<input type="text" name="T2" size="20">
+	</p>
+	<p><input type="button" value="lihat hasil" name="B1" onclick=test()> </p>
+</form>
+</body>
+</html>

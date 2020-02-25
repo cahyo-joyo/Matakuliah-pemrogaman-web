@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Objek Document </title>
+</head>
+<body>
+	<script language="javascript">
+		function ubahwarnaLB(warna) {
+			document.bgColor = warna;
+		}
+		function ubahwarnaLD(warna) {
+			document.fgColor = warna;
+		}
+	</script>
+	<h1>TES</h1>
+	<form>
+		<input 	type="button" 
+				value="Latar Belakang Hijau"
+				onclick="ubahwarnaLB('GREEN')">
+		<input 	type="button" 
+				value="Latar Belakang Putih"
+				onclick="ubahwarnaLB('WHITE')">
+		<input 	type="button" 
+				value="Teks Kuning"
+				onclick="ubahwarnaLD('YELLOW')">
+		<input 	type="button" 
+				value="Teks Biru"
+				onclick="ubahwarnaLD('BLUE')">
+	</form>
+</body>
+</html>
