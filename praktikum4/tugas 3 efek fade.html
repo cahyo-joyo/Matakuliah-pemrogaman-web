@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> tugas 3 efek fade </title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#fadein").click(function(){
+			$("#kotak").fadeIn("fast")
+		});
+		$("#fadeto").click(function(){
+			$("#kotak").fadeTo("slow",0.3)
+		});
+		$("#fadeout").click(function(){
+			$("#kotak").fadeOut("fast",)
+		});
+	});
+	</script>
+		<style type="text/css">
+		#kotak{
+			background-color: yellow;
+			width: 500px;
+			height: 300px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="kotak"></div>
+	<br><br>
+	<button id="fadein">Fade In</button>
+	<button id="fadeto">Fade Out 0.3</button>
+	<button id="fadeout">Fade Out</button>
+</body>
+</html>
