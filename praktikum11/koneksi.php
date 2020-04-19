@@ -2,6 +2,6 @@
 $host       = "localhost";
 $user       = "root";
 $password   = "";
-$database   = "db_siswa";
+$database   = "praktikum11_web";
 $koneksi    = mysqli_connect($host, $user, $password, $database);
 ?>

@@ -1,0 +1,32 @@
+<?php
+include 'koneksi.php';
+$nama 				= $_POST['nama'];
+$kelamin 			= $_POST['kelamin'];
+$nisn 				= $_POST['nisn'];
+$nik 				= $_POST['nik'];
+$tempatlhr 			= $_POST['tempatlhr'];
+$tanggallhr 		= $_POST['tanggallhr'];
+$akta 				= $_POST['akta'];
+$agama 				= $_POST['agama'];
+$kewarganegaraan 	= $_POST['kewarganegaraan'];
+$wna 				= $_POST['wna'];
+$berkebutuhan 		= $_POST['berkebutuhan'];
+$alamat 			= $_POST['alamat'];
+$rt 				= $_POST['rt'];
+$rw 				= $_POST['rw'];
+$dusun 				= $_POST['dusun'];
+$kelurahan 			= $_POST['kelurahan'];
+$kecamatan 			= $_POST['kecamatan'];
+$kodepos 			= $_POST['kodepos'];
+$lintang 			= $_POST['lintang'];
+$bujur 				= $_POST['bujur'];
+$tinggal 			= $_POST['tinggal'];
+$transportasi 		= $_POST['transportasi'];
+$kks 				= $_POST['kks'];
+$anak 				= $_POST['anak'];
+$kps 				= $_POST['kps'];
+$nokps 				= $_POST['nokps'];
+$query="INSERT INTO formpeserta SET nama='$nama', kelamin='$kelamin', nisn='$nisn', nik='$nik', tempatlhr='$tempatlhr', tanggallhr='$tanggallhr', akta='$akta', agama='$agama', kewarganegaraan='$kewarganegaraan', wna='$wna', berkebutuhan='$berkebutuhan', alamat='$alamat', rt='$rt', rw='$rw', dusun='$dusun', kelurahan='$kelurahan', kecamatan='$kecamatan', kodepos='$kodepos', lintang='$lintang', bujur='$bujur', tinggal='$tinggal', transportasi='$transportasi', kks='$kks', anak='$anak', kps='$kps', nokps='$nokps'";
+mysqli_query($conn, $query);
+header("location:formulir peserta didik.php");
+?>
